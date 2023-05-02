@@ -1,3 +1,5 @@
+package oop20230502;
+
 import java.lang.String;
 public class StringTest1 {
 
@@ -107,6 +109,11 @@ public class StringTest1 {
 		System.out.println(str1.equals(str2));  // false   // 일치 할 때 true
 		
 		System.out.println(str1.compareTo(str2));  // str1이 주어, // 일치할 때 0  , 비교하는 대상이 더 크면 음수, 비교하는 값이 더 작으면 양수 ( 불일치)
+		
+		
+		
+		
+		
 		
 	}
 
