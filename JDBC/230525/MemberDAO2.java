@@ -45,7 +45,7 @@ public class MemberDAO2 {
 }
 	
 												// 해당레코드 모두 가지고 있는 memberVO
-	// 회원조회 - 매개변수로 아이디를 넘겨받아 해당레코드를 객체에 저장하여 반환하는 select() 메서드 ( 접근제한 x)
+	// 회원조회 - 매개변수로 String 타입의 mid를 넘겨받아 해당레코드를 객체에 저장하여 반환하는 select() 메서드 ( 접근제한 x)
 	public MemberVO select(String mid) {   // mid를 받아온다. 메인에서 select(mid로 값을 받아옴)
 		MemberVO mvo = null;
 		try {
