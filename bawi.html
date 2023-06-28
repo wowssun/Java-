@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gawiBawiBo.html</title>
+<style>	
+
+fieldset {border: 3px solid lightpink; padding-top : 20px; text-align: center;
+			border-radius: 20px; box-shadow: 2px 2px 2px gray; 
+			width: 600px; height:450px;   margin: 0 auto;  }
+					
+			
+legend { text-align: center; font-weight: bold;   }
+
+img {  margin:10px; padding: 5px; width: 160px; height: 160px;   }
+
+
+.game:hover {border: 1px solid lightpink; border-radius: 20px; width: 160px; height: 160px; 
+				box-shadow: 2px 2px 2px gray; margin:-3px;  }
+
+.deco { border: 2px solid white; background: pink; opacity: 0.7; 
+		color: white; text-shadow: 3px 3px 2px black; font-size: 60px; font-weight: 600;
+		 border-radius: 20px; text-align: center; width: 300px; height: 200px; line-height: 200px;
+		 margin: 0 auto;  box-shadow: 2px 2px 2px gray; }
+		
+.deco2 {border: 2px solid white; background: pink; opacity: 0.7; 
+		color: white; text-shadow: 3px 3px 2px black; font-size: 60px; font-weight: 600;
+		 border-radius: 20px; text-align: center; width: 300px; height: 200px; 
+		 margin: 0 auto;  box-shadow: 2px 2px 2px gray; padding-top: 20px;  }		 
+		 	 
+		 
+.deco3	{ border: 2px dashed white; background: pink; opacity: 0.7; color: white;
+			width: 70px; height: 30px; border-radius: 10px; text-align: center; 
+			line-height: 30px; font-weight: 50px; text-shadow: 2px 2px 2px black; }	
+			
+			
+.deco3:hover { background: white; border: 2px solid pink; color: deeppink;
+				font-weight: 50px; text-shadow: 2px 2px 2px gray;  opacity: 0.7; }	
+
+.font { color: white; text-shadow: 2px 2px 2px gray; font-size: 20px;}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+	<fieldset>
+		<legend>가위 바위 보 게임 ver 0.1</legend>
+		<img  src="../images/zerohand.png" alt="보">
+		<img  src="../images/versus.png" alt="vs">
+		<img  src="../images/why.png" alt="?"><br><hr><br>
+		<img class="gawi game" src="../images/twohand.png" alt="가위">
+		<img class="bawi game" src="../images/zerohand.png" alt="주먹">
+		<img class="bo game" src="../images/fivehand.png" alt="보">	
+	</fieldset>
+	
+	<br>
+	
+	<div class="start deco" >START</div>
+	
+	<br>
+	
+		<div class="result deco2"  >U WIN!</div>
+		
+	<div class="font">	
+		<div class="round">[ ROUND 1 ]</div>
+		<div class="me">컴 0 VS. 1 나</div>
+		<div class="1win">1승 0무 0패</div>
+	</div>
+	
+	
+	<div class="stop deco3" >그만</div>
+	
+	<div class="continue deco3" >계속</div>
+	
+	
+	
+<!-- 	
+  div:nth-of-type(2) {  // 부모요소를 기준으로 옮긴다.
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  background: cyan;
+  opacity: 0.8; -->
+  
+ <!--  relative가 static인 상태를 기준으로 주어진 픽셀만큼 움직였다면,
+  absolute는 position: static 속성을 가지고 있지 않은 조상을 기준으로 움직입니다.
+  만약 조상 중에 포지션이 relative, absolute, fixed인
+  태그가 없다면 가장 위의 태그(body)가 기준이 됩니다. -->
+  
+ <!--  z-index는 태그들이 겹칠 때 누가 더 위로 올라가는지를 결정하는 속성입니다.
+  기본값은 0이고요. #top에 1을 주었기 때문에 다른 태그들보다 높게 위치합니다.
+  조금 뒤에 z-index 강좌가 나옵니다. -->
+  
+</body>
+</html>
