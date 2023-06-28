@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gawibawibo.html</title>
+</head>
+<body>
+
+	<h3>가위 바위 보!</h3>
+
+	<script>
+	
+	do {
+		var com	= (Math.floor(Math.random()*3));
+	    var you = prompt('0. 가위, 1. 바위, 2. 보 중에 하나를 숫자로 입력해주세요.');
+	    
+	   if((!isNaN(you)) && (you!=null) && (you !='')) {
+		  
+		   result = you - com     
+		    
+		   switch(parseInt(you)){		// var you = you == 0 ? '가위' --> 이렇게 해서 삼항연산자로 바꿔 보기
+		    	case 0 : you = '가위';  break;
+		    	case 1 : you = '바위';  break;
+		    	case 2 : you = '보'  ;  break;
+		    	default : alert('1 ~ 3을 입력해주세요.') 
+		    	} 
+		    
+		    switch(com){
+		    	case 0 : com = '가위';  break;
+		    	case 1 : com = '바위';  break;
+		    	case 2 : com = '보'  ;
+		    	}
+		       	
+		    document.write('YOU : ' + you + ' vs. ' + com + ' : COM <br><hr><br> ');
+		   	   
+		    switch(result) {
+		    	case 0 : alert('YOU : ' + you + ' vs. ' + com + ' : COM \n 비겼습니다.\n');	
+		    		break;
+		    	case 1 : case -2 : alert('YOU : ' + you + ' vs. ' + com + ' : COM \n 당신이 이겼습니다.\n');		   	
+		    		break;
+		    	case 2 : case -1 : alert('YOU : ' + you + ' vs. ' + com + ' : COM \n 당신이 졌습니다. \n');					
+  					break;
+  				default:  alert('다시 시도해주세요.');
+  						
+		    } 
+	     	    
+		}else if (isNaN(you)){
+			alert(' - GAME CANCELED : 숫자를 입력해주세요. -\n');
+		}else if (you ==''){
+			alert(' - GAME OVER : 입력된 값이 없습니다. -\n');
+		}else if (you == null){
+			alert(' - GAME CANCELED : 게임이 취소되었습니다. -\n');	
+		}
+	  }while(confirm('게임을 계속하시겠습니까?')) ;
+		  		alert ('게임을 종료합니다.');
+   	
+		  
+
+	</script>
+</body>
+</html>
