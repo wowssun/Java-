@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>randomImage.html</title>
+<style>
+	img { width : 150px; height: 150px;}
+
+
+</style>
+</head>
+<body>
+
+	<h3>random alphabet    vs    serial number</h3>
+	
+	<img alt="A" src="../images/A.png"> <!-- onclick="" --> 
+	<img alt="2" src="../images/2.png" > <!-- onclick="" --> 
+	
+	
+	<hr>
+	<p> 알파벳을 클릭하면 랜덤 이미지를 표시하고<br> <!-- 이미지가 하나씩 표시되고 알파벳은 랜덤 이미지 숫자는 순서대로  -->
+		숫자를 클릭하면 다음 숫자에 해당하는 이미지 표시</p>	<!-- 배열을 사용해서 이미지를 배열에 담아놓고 src값을 바꾸는 것.  -->
+
+
+	<p> 단, 알파벳은 중복 이미지 연속 표시 x<br>  <!--이전에 나왔던 이미지를 기억하고 있어야 한다.?   -->
+		숫자는 마지막 이미지 표시 후 다시 처음 이미지를 반복하여 표시</p>
+		
+		showRandom <br> <!--함수 이름 -->
+		showNext
+
+	<script>
+		/* 1. 화면에 이미지 두 개 표시하기  
+		   2. 이미지가 클릭되면 각각의 함수 호출하기
+		   3. 배열 두 개에 이미지를 6개씩 저장하기
+		   4. 함수 두 개 정의하기
+		   5. 알파벳 이미지를 랜덤 표시하는 함수에서 난수 6개를 중복없이 추출하기*/
+	
+		document.write('<img alt="A" src="../images/A.png">');  
+		document.write('<img alt="2" src="../images/2.png"> ');
+						
+		var num = ['<img src="../images/2.png">','<img src="../images/3.png">','<img src="../images/4.png">',
+			'<img src="../images/5.png">','<img src="../images/6.png">','<img src="../images/7.png">'];
+		
+		var alphabet = ['<img src="../images/A.png">','<img src="../images/B.png">','<img src="../images/C.png">',
+			'<img src="../images/D.png">','<img src="../images/E.png">','<img src="../images/F.png">']
+		
+		for( var i = 0; i <num.length; i++){
+			document.write(num[i]);
+		}
+		
+		for( var i =  0; i <num.length; i++){
+			document.write(alphabet[i]);
+		}
+		
+		<!--이미지를 클릭하면 다른 이미지로 변경하도록 처리-->
+		/* <img alt="포차코" src="../images/pochacco.jpg" onclick="this.src='../images/짱구.jpg'"> */
+
+		
+		function showRandom() { }
+		
+		showNext
+
+	</script>
+</body>
+</html>
